@@ -90,7 +90,7 @@ def merge_site(filelist,output):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--filelist", type=str, required = True, \
-                        help="list of /path/to/phased.vcf.gz, headers in the 1st file will be kept in the output")
+                        help="list of /path/to/vcf.gz, headers in the 1st file will be kept in the output")
     parser.add_argument("--merge", type=str, required = True, choices=['sample','site'], \
                         help="merge samples (same sites, different samples) or sites (same samples, different sites)")
     parser.add_argument("--out", type=str, required = False, default='out.vcf.gz', \
