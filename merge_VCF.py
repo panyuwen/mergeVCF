@@ -113,7 +113,7 @@ def main():
         with gzip.open(files[0]) as fin:
             line = fin.readline().decode("utf-8")
             while line.startswith == "##":
-                fout.write(line.encode())
+                fout.write(str.encode(line))
                 line = fin.readline().decode("utf-8")
 
     if args.merge == 'sample':
